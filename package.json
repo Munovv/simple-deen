@@ -1,0 +1,29 @@
+{
+  "name": "simple-deen",
+  "version": "1.0.0",
+  "description": "Simple RSA encode/decode application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -mw"
+  },
+  "keywords": [
+    "RSA",
+    "encode",
+    "decode",
+    "electronjs"
+  ],
+  "author": "munovv",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "node-rsa": "^1.1.1",
+    "popper.js": "^1.16.1"
+  }
+}

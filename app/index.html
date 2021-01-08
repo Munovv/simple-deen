@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Munay" />
+
+    <title>Simple deen</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.test.css" />
+
+    <script>let $ = require('jquery');</script>
+    <script>require('popper.js');</script>
+    <script>require('bootstrap');</script>
+
+  </head>
+  <body>
+
+    <div class="loading">
+        <img src="images/loading.gif">
+    </div>
+
+    <div class="ct" id="t1">
+      <div class="ct" id="t2">
+        <div class="ct" id="t3">
+          <div class="ct" id="t4">
+             <div class="ct" id="t5">
+              <ul id="menu">
+                <a href="#t1"><li class="icon fa fa-github" id="uno"></li></a></br>
+                <a href="#t2"><li class="icon fa fa-edit" id="dos"></li></a></br>
+                <a href="#t3"><li class="icon fa fa-eraser" id="tres"></li></a></br>
+                <a href="#t4"><li class="icon fa fa-key" id="cuatro"></li></a></br>
+              </ul>
+              <div class="page" id="p1">
+                 <section class="icon fa fa-github">
+                   <span class="title">simple-deen</span>
+                   <span class="hint">Исходный код на моем <a href="https://github.com/Munovv/simple-deen" target="_blank">Github</a>
+                     <br> RSA Simple deen - Munovv</br><strong>&copy; 2020, Все права защищены.</strong>
+                   </span>
+                 </section>
+              </div>
+              <div class="page" id="p2">
+                <div id="rsa-encryption" role="tabpanel" aria-labelledby="rsa-encryption-tab" style="width: 500px; margin: auto; margin-top: 30px;">
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" rows="5" placeholder="Содержимое файла для шифрации"></textarea>
+                            <button type="button" class="btn btn-black file-button open">Загрузить содержимое файла</button>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="key" rows="3" placeholder="Открытый ключ"></textarea>
+                            <button type="button" class="btn btn-black file-button open">Загрузить ключ с файла</button>
+                        </div>
+                        <div class="form-group">
+                        <textarea class="form-control" id="result" rows="5" disabled placeholder="Зашифрованное содержимое<"></textarea>
+                        <button type="button" class="btn btn-black file-button save">Сохранить в файл</button>
+                        <button type="button" class="btn btn-black get-result">Зашифровать</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+              <div class="page" id="p3">
+                <div id="rsa-decryption" role="tabpanel" aria-labelledby="rsa-decryption-tab" style="width: 500px; margin: auto; margin-top: 30px;">
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" rows="5" placeholder="Содержимое для расшифрования"></textarea>
+                            <button type="button" class="btn btn-black file-button open">Загрузить содержимое файла</button>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="key" rows="3" placeholder="Закрытый ключ"></textarea>
+                            <button type="button" class="btn btn-black file-button open">Загрузить ключ с файла</button>
+                        </div>
+                        <div class="form-group">
+                        <textarea class="form-control" id="result" rows="5" disabled placeholder="Расшифрованное содержимое"></textarea>
+                        <button type="button" class="btn btn-black file-button save">Сохранить в файл</button>
+                        <button type="button" class="btn btn-black get-result">Расшифровать</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+              <div class="page" id="p4">
+                <div id="rsa-genkey" role="tabpanel" aria-labelledby="rsa-genkey-tab" style="width: 500px; margin: auto; margin-top: 5px;">
+                    <form>
+                        <button type="button" class="btn btn-black get-result">Сгенерировать ключи</button>
+                        <div class="form-group">
+                            <textarea class="form-control" id="public-key" rows="5" disabled placeholder="Открытый ключ" style="margin-top: 25px;"></textarea>
+                            <button type="button" class="btn btn-black file-button save">Сохранить в файл</button>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="private-key" rows="5" disabled placeholder="Закрытый ключ"></textarea>
+                            <button type="button" class="btn btn-black file-button save">Сохранить в файл</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>require("./renderer.js");</script>
+  </body>
+</html>
