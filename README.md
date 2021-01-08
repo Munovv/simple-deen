@@ -47,4 +47,4 @@ npm run dist
 
 ## Авторы
 
-* **migunoff.serg@gmail.com** - [Munovv](https://github.com/Munovv)
+* **[Munovv](https://github.com/Munovv)
