@@ -9,7 +9,7 @@ function createWindow(){
         webPreferences: {
             nodeIntegration: true
         },
-        //icon: __dirname + '/app/images/ninja.png'
+        icon: __dirname + '/app/images/logo.png'
     })
     win.loadFile('./app/index.html')
     win.setMenuBarVisibility(false)
