@@ -47,4 +47,4 @@ npm run dist
 
 ## Авторы
 
-* **[Munovv](https://github.com/Munovv)
+* [Munovv](https://github.com/Munovv)
