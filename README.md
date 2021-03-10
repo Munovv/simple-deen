@@ -16,14 +16,9 @@
 node.js
 ```
 
-Далее устанавливаем пакеты, если у Вас версия без node_modules:
+Далее устанавливаем пакеты
 ```
-npm install electron --save-dev
-npm install electron-builder --save-dev
-npm install jquery --save
-npm install bootstrap --save
-npm install popper.js --save
-npm install node-rsa --save
+npm install
 ```
 
 ### Запуск
