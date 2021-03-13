@@ -24,7 +24,6 @@ npm install
 ### Запуск
 
 ```
-npm install
 npm start
 ```
 
