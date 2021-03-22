@@ -6,8 +6,6 @@ RSA Simple Deen is an application for encrypting files and their contents. Suppo
 
 ## Before you start
 
-Эта инструкция поможет Вам запустить приложение
-
 ### Requirements
 
 You will need to install node.js on your computer if you have not done so beforehand.
