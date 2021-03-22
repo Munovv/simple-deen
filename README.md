@@ -1,71 +1,44 @@
 # RSA Simple Deen
 
-Это мини-приложение по шифрованию содержимого файлов, а также некоторых строк. Алгоритм шифрования RSA.
+RSA Simple Deen is an application for encrypting files and their contents. Supports 512/1024/2048 encryption key dimension.
 
 ![Preview image](app/images/preview.png)
 
-## Прежде чем начать
+## Before you start
 
 Эта инструкция поможет Вам запустить приложение
 
-### Требования
+### Requirements
 
-Первым делом устанавливаем nodeJS, если он у Вас еще не установлен.
+You will need to install node.js on your computer if you have not done so beforehand.
 
 ```
 node.js
 ```
 
-Далее устанавливаем пакеты
+Next, install the packages
 ```
 npm install
 ```
 
-### Запуск
+### Run
 
 ```
 npm start
 ```
 
-## Сборка приложения
+## Assembly
 
 ```
 npm run dist
 ```
 
-## Изменение размерности ключа шифрования
-
-### Пример использования:
-
-```js
-
-// Устанавливаем свою размерность ключа - 512/1024/2048
-// Пример: const key = new NodeRSA({b: 512/1024/2048})
-
-const key = new NodeRSA({b: 512/1024/2048})
-
-```
-
-### Изменяется это в файле main.js (19 строка)
-
-```js
-ipcMain.on('rsa-genkey', (event) => {
-    const key = new NodeRSA({b: 2048})
-    const publicKey = key.exportKey('pkcs8-public-pem')
-    const privateKey = key.exportKey('pkcs8-private-pem')
-    event.sender.send('rsa-genkey-reply', {publicKey, privateKey})
-})
-});
-
-$promise->wait();
-```
-
-## Написан на основе
+## Written based on
 
 * [Electron.js](https://electronjs.org/)
 * [Node.js](https://nodejs.org/en/)
 * [Bootstrap 4](https://getbootstrap.com/)
 
-## Авторы
+## Authors
 
 * [Munovv](https://github.com/Munovv)
